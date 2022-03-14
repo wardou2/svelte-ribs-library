@@ -6,6 +6,10 @@
 <Meta
     title="RIBS Component Library/Button"
     component={Button}
+    parameters={{
+        zeplinLink:
+            'https://app.zeplin.io/styleguide/62102b370acf14ae57d7aaab/components?coid=62102bd9fd181113bdd60f38'
+    }}
     argTypes={{
         label: { control: 'text' },
         primary: { control: 'boolean' },
