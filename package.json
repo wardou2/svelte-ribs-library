@@ -3,8 +3,8 @@
     "version": "0.0.1",
     "scripts": {
         "dev": "svelte-kit dev",
-        "build": "build-storybook",
-        "start": "start-storybook",
+        "build": "svelte-kit build",
+        "start": "node build",
         "package": "svelte-kit package",
         "preview": "svelte-kit preview",
         "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -29,6 +29,7 @@
         "@typescript-eslint/eslint-plugin": "^5.10.1",
         "@typescript-eslint/parser": "^5.10.1",
         "babel-loader": "^8.2.3",
+        "chromatic": "^6.5.3",
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-storybook": "^0.5.7",
