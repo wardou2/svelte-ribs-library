@@ -38,3 +38,12 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Dev Log (Notes to Self, such as it is)
+
+### 2022_03_23
+
+Basic flow for local development seems to be:
+
+-   link SRL package to app by running `npm link` in the `/package` directory. Run `npm link svelte-ribs-library` in the app directory root. Develop away. Changes happen automatically. Sweet.
+-   TODO: Figure out minutiae of actually publishing this

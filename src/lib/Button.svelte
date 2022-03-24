@@ -1,27 +1,29 @@
 <script lang="ts">
-    import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher } from "svelte";
 
     export let primary = false;
-    export let size = 'medium';
-    export let label = '';
+    export let size = "medium";
+    export let disabled = false;
+    export let label = "";
 
     const dispatch = createEventDispatcher();
     function onClick(event) {
-        dispatch('click', event);
+        dispatch("click", event);
     }
 </script>
 
 <button
     type="button"
-    class={['btn', `btn-${primary ? 'primary' : 'secondary'}`].join(' ')}
+    class={["btn", `btn-${primary ? "primary" : "secondary"}`].join(" ")}
     on:click={onClick}
+    {disabled}
 >
     {label}
 </button>
 
 <style>
     .srl-button {
-        font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
         border: 0;
         border-radius: 3px;

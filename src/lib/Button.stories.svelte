@@ -1,6 +1,6 @@
 <script>
-    import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-    import Button from './Button.svelte';
+    import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+    import Button from "./Button.svelte";
 </script>
 
 <Meta
@@ -8,16 +8,16 @@
     component={Button}
     parameters={{
         zeplinLink:
-            'https://app.zeplin.io/styleguide/62102b370acf14ae57d7aaab/components?coid=62102bd9fd181113bdd60f38'
+            "https://app.zeplin.io/styleguide/62102b370acf14ae57d7aaab/components?coid=62102bd9fd181113bdd60f38",
     }}
     argTypes={{
-        label: { control: 'text' },
-        primary: { control: 'boolean' },
-        backgroundColor: { control: 'color' },
+        label: { control: "text" },
+        primary: { control: "boolean" },
+        backgroundColor: { control: "color" },
         size: {
-            control: { type: 'select', options: ['small', 'medium', 'large'] }
+            control: { type: "select", options: ["small", "medium", "large"] },
         },
-        onClick: { action: 'onClick' }
+        onClick: { action: "onClick" },
     }}
 />
 
@@ -29,13 +29,13 @@
     name="Primary"
     args={{
         primary: true,
-        label: 'Button'
+        label: "Button",
     }}
 />
 
 <Story
     name="Secondary"
     args={{
-        label: 'Button'
+        label: "Button",
     }}
 />
